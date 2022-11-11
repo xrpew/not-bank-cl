@@ -1,0 +1,485 @@
+:root{
+    --blue-logo: rgba(4,23,102);
+    --blue-btn: rgba(70,117,253);
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h6{
+    margin-top: 5vw;
+}
+.white{
+    color: white;
+}
+
+.pages{
+    padding-top: 80px;
+    overflow: auto;
+    width: 100vw;
+    /* max-width: 1500px; */
+    height: 180vw;
+    max-height: 90vh;
+    display: flex;
+    background-color: #041766;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23A7A7A7' stroke-width='0.6' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.imagen-promocional{
+    display: flex;
+    justify-content: center;
+}
+.imagen-promocional img{
+    width: 90%;
+    max-width: 800px;
+    border-radius: 15px;
+    
+
+}
+
+.text-container{
+    text-align: center;
+    color: white;
+    width: 90vw;
+    max-width: 500px;
+
+}
+
+/* ---------------------------- */
+body{
+    display: flex;
+    justify-content: center;
+}
+.slider-container {
+    display: flex;
+    
+    width: 100vw;
+    height: 27vw;
+    max-height: 120px;
+    max-width: 1200px;
+    overflow-x: scroll;
+    /* justify-items: end; */
+  
+    /* Vamos a añadir esto 👇 */
+    scroll-snap-type: x mandatory;
+    
+  }
+ 
+  .slider-item {
+    flex: 0 0 60%;
+    
+    max-width: 252px;
+    max-height: 70px;
+    height: 20vw;
+    margin: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0 0 8px 2px rgb(236, 236, 236) ;
+    /* Vamos a añadir esto 👇 */
+    scroll-snap-align: center;
+
+   
+  }
+  .slider-container img{
+    margin: 5px;
+    max-width: 80px;
+    min-width: 20%;
+    border-radius: 15px;
+  }
+  .text-cont{
+    margin: 0;
+    padding: .5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.slider-container p{
+    margin: 0;
+    font-size: .7em;
+    color: blue;
+    font-weight: bold;
+}
+.slider-container span{
+    margin: 0;
+    font-size: .7em;
+}
+
+.slider-item:hover {
+    box-shadow: 0 0 8px 2px rgb(220, 220, 220) ;
+    transform: translateY(-1px);
+    
+
+}
+.slider-item:focus{
+    background-color: var(--blue-btn);
+    color: white;
+    text-decoration: none;
+}
+
+.nav{
+    
+    max-width: 1200px;
+    width: 100vw;
+    flex-wrap: nowrap;  align-items: center;
+    justify-content: space-between; 
+}
+
+.button-cta button{
+    border: none;
+    width: 50vw;
+    max-width: 800px;
+    border-radius: 100px;
+    padding: .5em;
+    background-color: var(--blue-btn);
+    color: white;
+}
+.text-container img {
+    width: 30vw;
+    max-width: 150px;
+    margin-left: 2vw;
+}
+.text-cont p{
+    color: #041766;
+}
+.beneficios{
+    width: 100vw;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.beneficios h3{
+    color: var(--blue-logo);
+    line-height: 2em;
+    font-size: 2em;
+    
+}
+
+/* -------------------------------OTRO CARRUSEL MENÚ----------------------------------- */
+.slider-text-only{
+    margin: 0;
+    color: white;
+    margin-top: 1em;
+    height: 10vw;
+    justify-content: center;
+    box-shadow: 0 0 1px 1px rgb(242, 242, 242);
+    border-radius: 0;
+}
+.slider-text-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 27vw;
+    max-height: 120px;
+    overflow-x: scroll;
+  
+    /* Vamos a añadir esto 👇 */
+    scroll-snap-type: x mandatory;
+}
+.slider-text-only:hover{
+    box-shadow: 0 0 10px .1px var(--blue-logo) ;
+    transform: translateY(-1px);
+}
+
+.brand-seguridad{
+    background-color: rgb(245,247,255);
+    width: 100vw;
+    height: 50vw;
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.brand-seguridad p{
+    width: 90vw;
+    margin-top: -3vw;
+}
+.brand-seguridad img{
+    align-self: flex-start;
+    width: 10vw;
+    max-width: 50px;
+    margin-left: 10px;
+}
+.brand-seguridad a{
+    align-self: flex-start;
+    margin-left: 4vw;
+
+}
+.card-container{
+    margin-top: 2vw;
+    width: 100vw;
+    gap:2vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-beneficios{
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 15px;
+    margin: 0;
+    max-width: 500px;
+}
+.card-beneficios:hover{
+    box-shadow: 0 0 8px 2px var(--blue-logo);
+    transform: translatey(-1%);
+    transition: all .3s;
+}
+.card-beneficios img{
+    width: 80vw;
+    max-width: 90%;
+    margin-top: 2vw;
+    border-radius: 15px;
+}
+.card-beneficios h4{
+    color: var(--blue-logo);
+    font-size: 1em;
+    padding:1em ;
+    margin-bottom: -2em;
+}
+.card-beneficios span{
+    color: #ccc;
+    font-size: 1em;
+}
+.card-beneficios a{
+    color: var(--blue-logo);
+    font-size: 1em;
+}
+.brand-blue{
+    background-color: var(--blue-logo);
+    width: 100vw;
+    /* max-height: 100vw; */
+    max-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    /* margin: 2vw; */
+    align-items: center;
+    padding: 2vw;
+    /* border: 10vw solid black; */
+    
+    
+}
+.brand-blue-item{
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+    width: 90vw;
+    max-width: 1000px;
+    max-height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 100px 1px rgb(182, 182, 182);
+    padding: 1vw;
+}
+
+.brand-blue p{
+    color: white;
+    
+}
+.brand-blue span{
+    color: #ccc;
+}
+.brand-blue img{
+   width: 18vw;
+   max-width: 100px;
+}
+.wantTobeCl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4vw;
+}
+h3{
+    width: 80vw;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 5vw;
+}
+.wantTobeCl span{
+    color: #909090;
+    font-size: 1em;
+}
+/* .wantTobeCl h6{
+    color: #909090;
+    font-size: 3em;
+    text-align: center;
+} */
+h6{
+    
+        color: #909090;
+        font-size: 3em;
+        text-align: center;
+   
+}
+.variant-of-blue{
+    background-color: white;
+}
+.variant-of-blue p{
+    color: var(--blue-logo);
+}
+.variant-of-blue span{
+    color: rgb(114, 114, 114)
+}
+
+.opcionesPago{
+    display: flex;
+    justify-content: center;
+}
+.opcionesPago p{
+    text-decoration: none;
+    color: var(--blue-logo);
+    font-size: 200%
+}
+.pages-anim{
+    padding-top: 80px;
+    overflow: auto;
+    width: 100vw;
+    max-width: 1500px;
+    height: 180vw;
+    height: 100vh;
+    display: flex;
+    background-color: #e8e8e86e;
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23A7A7A7' stroke-width='0.6' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E"); */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.pages-anim h3 {
+    font-size: 1.2em;
+}
+.pages-anim span{
+    font-size: .8em;
+    text-align: center;
+    margin: 1.5vw;
+    width: 90vw;
+    color: rgb(105, 105, 105);
+}
+.download-link img{
+    width: 90vw;
+    max-width: 500px;
+}
+.anim-container{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 90vw;
+    max-width: 600px;
+    height: 90vw;
+    max-height: 600px;
+    background-image: url("https://portales.bancochile.cl/uploads/000/035/009/2959a20c-91c8-4708-815a-d96d2e88769a/original/Sphete_background.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.tlf img{
+    height: 90vw;
+    max-height: 300px;
+}
+.left img{
+    margin: -80%;
+    /* border: 1px solid black; */
+    margin-top: -180%;
+}
+.rigth img{
+    margin-left: 80%;
+}
+/* ---------------------------------ANIMATION------------------------------------------ */
+.object {
+    animation: MoveUpDown 2.5s linear infinite;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {bottom: 0}
+    50% {bottom: 20px}
+  }
+  .object2 {
+    animation: MoveUpDown2 2.5s linear infinite;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  
+  @keyframes MoveUpDown2 {
+    0%, 100% {bottom: 20px}
+    50% {bottom: 0px}
+  }
+
+  .link-footer{
+    margin-top: 5vw;
+    background-color: #eeeeee;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+  }
+  .link-footer ul{
+    list-style: none;
+    color: #909090;
+  }
+  .link-footer strong{
+    font-weight:bold;
+  }
+
+    .warning{
+        color: orangered;
+    }
+
+  .appStore img{
+    margin-top: 1em;
+    width: 25%;
+    max-width: 150px;
+  }
+  .appStore{
+    display: flex;
+    width: 100vw;
+    margin-top: 2vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .header{
+    background-color: var(--blue-logo);
+    position: fixed;
+    width: 100vw;
+    height: 20vw;
+    max-height: 80px;
+    z-index: 10;
+    
+}
+.dark-blue{
+    background-color: var(--blue-logo);
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+.dark-blue h6{
+    margin: 2vw;
+    font-size: 2em;
+    color: white;
+}
+.dark-blue p{
+    color: white;
+    margin: 2vw;
+    margin-top: 4vw;
+    text-align: justify;
+    font-size: 1em;
+}
+
