@@ -1,7 +1,7 @@
 export const SliderBeneficios = ({ title }) => {
   return (
-    <div class="slider-item slider-text-only">
-      <div class="text-cont">
+    <div className="slider-item slider-text-only">
+      <div className="text-cont">
         <p>{title}</p>
       </div>
     </div>
